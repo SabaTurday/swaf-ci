@@ -9,6 +9,11 @@ Structure
 ```php
     [swaf root path]
     |-- apps
+    	|-- app_sabaturday
+    		|-- application
+    		|-- modules
+    		|-- templates
+    	|-- <applications>
     |-- systems
     |-- www
         |-- public_html
