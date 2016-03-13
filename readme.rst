@@ -5,6 +5,25 @@ SabaTurday Web Application Framework (SWAF) with CodeIgniter
 SWAF is a complete web application framework for your CI Project StaterKit.
 
 *******************
+Structure
+*******************
+
+[swaf root path]
+|-- apps
+|-- systems
+|-- www
+    |-- public_html
+ 		|-- <domain>
+ 			|-- assets
+ 			|-- sites
+ 				|-- all
+ 			|-- themes
+ 				|-- frontend
+ 				|-- backend
+ 			|-- index.php
+    |-- sites
+
+*******************
 Credits
 *******************
 
