@@ -2,9 +2,7 @@
 
 SWAF is a complete web application framework for your CI Project StaterKit.
 
-*******************
-Structure
-*******************
+###Structure
 
 ```php
     [swaf root path]
@@ -13,24 +11,36 @@ Structure
     		|-- application
     		|-- modules
     		|-- templates
-    	|-- <applications>
+    	|-- <sabaturday applications>
     |-- systems
+    	|-- ci304
+    	|-- ci305
+    	|-- swaf010
+    		|-- core
+    	|-- third_party
     |-- www
         |-- public_html
  		    |-- <domain>
  			    |-- assets
  			    |-- sites
  				    |-- all
+ 				    |-- default
+ 				    |-- <subdomain>
  			    |-- themes
  				    |-- frontend
  				    |-- backend
  			    |-- index.php
         |-- sites
+        	|-- all
+        	|-- default
+        	|-- <subdomain>
 ```
 
 ###Credits
 
 - `HMVC Module`
+
+********************
 
 #What is CodeIgniter
 
