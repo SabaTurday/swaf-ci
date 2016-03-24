@@ -2,6 +2,11 @@
 
 SWAF is a complete web application framework for your CI Project StaterKit.
 
+###Feature
+- Multisite / Multitenancy
+- H M V C
+- R B A C
+
 ###Structure
 
 ```php
@@ -15,8 +20,11 @@ SWAF is a complete web application framework for your CI Project StaterKit.
     |-- systems
     	|-- ci304
     	|-- ci305
+        |-- ci306
+        |-- <ci system update>
     	|-- swaf010
     		|-- core
+        |-- <swaf system update>
     	|-- third_party
     |-- www
         |-- public_html
