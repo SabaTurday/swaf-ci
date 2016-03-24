@@ -369,4 +369,10 @@ switch (ENVIRONMENT)
  *
  * And away we go...
  */
+require_once SWAFPATH.'core/SWAF_Multisite.php';
+
+$_SWAF_Multisite = new SWAF_Multisite();
+$_SWAF_Multisite->set_site_prefix(array('sabaturday'));
+$_SWAF_Multisite->set_multisite_path(ROOTPATH."www/sites/app_sabaturday/");
+
 require_once BASEPATH.'core/CodeIgniter.php';
