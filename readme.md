@@ -20,20 +20,23 @@ SWAF is a complete web application framework for your CI Project StaterKit.
     	|-- third_party
     |-- www
         |-- public_html
- 		    |-- <domain>
+ 		    |-- <application>
  			    |-- assets
  			    |-- sites
  				    |-- all
  				    |-- default
+                    |-- <domain>
  				    |-- <subdomain>
  			    |-- themes
  				    |-- frontend
  				    |-- backend
  			    |-- index.php
         |-- sites
-        	|-- all
-        	|-- default
-        	|-- <subdomain>
+            |-- <application>
+        	   |-- all
+        	   |-- default
+               |-- <domain>
+        	   |-- <subdomain>
 ```
 
 ###Credits
