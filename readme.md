@@ -41,10 +41,10 @@ SWAF is a complete web application framework for your CI Project StaterKit.
  			    |-- index.php
         |-- sites
             |-- <application>
-        	   |-- all
-        	   |-- default
-               |-- <domain>
-        	   |-- <subdomain>
+                |-- all
+                |-- <domain>
+                    |-- default
+                    |-- <subdomain>
 ```
 
 ###Credits
