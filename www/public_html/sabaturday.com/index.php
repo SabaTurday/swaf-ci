@@ -99,6 +99,7 @@ switch (ENVIRONMENT)
  */
 	$system_path = '../../../systems/ci306';
 	$swaf_path = '../../../systems/swaf010';
+	$root_path = '../../..';
 
 /*
  *---------------------------------------------------------------
@@ -233,11 +234,42 @@ switch (ENVIRONMENT)
 		).DIRECTORY_SEPARATOR;
 	}
 
-	// Is the system path correct?
+	// Is the swaf path correct?
 	if ( ! is_dir($swaf_path))
 	{
 		header('HTTP/1.1 503 Service Unavailable.', TRUE, 503);
 		echo 'Your swaf folder path does not appear to be set correctly. Please open the following file and correct this: '.pathinfo(__FILE__, PATHINFO_BASENAME);
+		exit(3); // EXIT_CONFIG
+	}
+
+
+	// Is the root path correct?
+	if ( ! is_dir($root_path))
+	{
+		header('HTTP/1.1 503 Service Unavailable.', TRUE, 503);
+		echo 'Your root folder path does not appear to be set correctly. Please open the following file and correct this: '.pathinfo(__FILE__, PATHINFO_BASENAME);
+		exit(3); // EXIT_CONFIG
+	}
+
+	if (($_temp = realpath($root_path)) !== FALSE)
+	{
+		$root_path = $_temp.DIRECTORY_SEPARATOR;
+	}
+	else
+	{
+		// Ensure there's a trailing slash
+		$root_path = strtr(
+			rtrim($root_path, '/\\'),
+			'/\\',
+			DIRECTORY_SEPARATOR.DIRECTORY_SEPARATOR
+		).DIRECTORY_SEPARATOR;
+	}
+
+	// Is the root path correct?
+	if ( ! is_dir($root_path))
+	{
+		header('HTTP/1.1 503 Service Unavailable.', TRUE, 503);
+		echo 'Your root folder path does not appear to be set correctly. Please open the following file and correct this: '.pathinfo(__FILE__, PATHINFO_BASENAME);
 		exit(3); // EXIT_CONFIG
 	}
 
@@ -252,6 +284,7 @@ switch (ENVIRONMENT)
 	// Path to the system directory
 	define('BASEPATH', $system_path);
 	define('SWAFPATH', $swaf_path);
+	define('ROOTPATH', $root_path);
 
 	// Path to the front controller (this file) directory
 	define('FCPATH', dirname(__FILE__).DIRECTORY_SEPARATOR);
