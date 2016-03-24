@@ -18,7 +18,6 @@ SWAF is a complete web application framework for your CI Project StaterKit.
     		|-- templates
     	|-- <sabaturday applications>
     |-- systems
-    	|-- ci304
     	|-- ci305
         |-- ci306
         |-- <ci system update>
@@ -36,15 +35,20 @@ SWAF is a complete web application framework for your CI Project StaterKit.
                         |-- default
                         |-- <subdomain>
  			    |-- themes
- 				    |-- frontend
- 				    |-- backend
+ 				    |-- <frontend>
+ 				    |-- <backend>
  			    |-- index.php
         |-- sites
             |-- <application>
                 |-- all
+                    |-- config
                 |-- <domain>
                     |-- default
+                        |-- config
+                        |-- <private files>
                     |-- <subdomain>
+                        |-- config
+                        |-- <private files>
 ```
 
 ###Credits
