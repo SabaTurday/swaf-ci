@@ -32,9 +32,9 @@ SWAF is a complete web application framework for your CI Project StaterKit.
  			    |-- assets
  			    |-- sites
  				    |-- all
- 				    |-- default
-                    |-- <domain>
- 				    |-- <subdomain>
+ 				    |-- <domain>
+                        |-- default
+                        |-- <subdomain>
  			    |-- themes
  				    |-- frontend
  				    |-- backend
