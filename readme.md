@@ -2,7 +2,7 @@
 
 SWAF is a complete web application framework for your CI Project StaterKit.
 
-###Feature
+###Features
 - Multisite / Multitenancy
 - H M V C
 - R B A C
